@@ -6,51 +6,82 @@
 \hypersetup{colorlinks=true, urlcolor=blue}
 \usepackage[
 top=0.5in,
-left=0.6in,
-right=0.6in,
+left=0.5in,
+right=0.5in,
 bottom=0.5in]{geometry}
+\usepackage{CJKutf8}
+\usepackage{tabularx}
+\usepackage{multirow}
+\AtBeginDvi{\input{zhwinfonts}}
 
 \setlength\parindent{0pt}
 \pagenumbering{gobble}
 
-\newcommand{\interspace}{\vspace{10pt}}
-\newcommand{\intraspace}{\vspace{5pt}}
+\newcommand{\interspace}{\vspace{7pt}}
+\newcommand{\intraspace}{\vspace{2pt}}
+\newcommand{\name}{Phillmont Muktar}
+\newcommand{\cname}{\begin{CJK*}{UTF8}{zhsong}郑传期\end{CJK*}}
+\newcommand{\tel}{+65 8651 6118}
+\newcommand{\email}{\href{mailto:phillmont@u.nus.edu}{phillmont@u.nus.edu}}
+\newcommand{\linkedin}{\href{http://linkedin.com/in/phillmont}{\textbf{linkedin}.com/in/phillmont}}
+\newcommand{\github}{\href{http://github.com/purfectliterature}{\textbf{github}.com/purfectliterature}}
 
 \begin{document}
 	\sffamily
-	\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-		\textbf{\Large Phillmont Muktar} & +65 8651 6118\\
-		 \href{mailto:phillmont@u.nus.edu}{phillmont@u.nus.edu}
-		 & \href{http://linkedin.com/in/phillmont}{linkedin.com/in/phillmont} \textbar\textbar \space \href{http://github.com/purfectliterature}{github.com/purfectliterature}
-	\end{tabular*}
+	
+	\begin{tabularx}{\linewidth}{@{}X r@{}}
+		{\Large \textbf{\name, \cname}} & \tel\\
+		\email & \linkedin{} \textbar\textbar \space \github
+	\end{tabularx}
 
 	\interspace
 
-	%\noindent\rule{\textwidth}{1pt}
-	\textbf{\large Education} \hrulefill \\
+	\textbf{\large EDUCATION} \hrulefill \\
 	\textbf{National University of Singapore} \hfill Singapore\\
-	\textit{B.Sc. Food Science and Technology, Minor in Computer Science} \hfill Aug 2018 -- Present
+	\textit{Bachelor of Science in Food Science and Technology, Minor in Computer Science} \hfill Aug 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Cumulative Average Point (CAP): 4.5/5.0
+		\item Cumulative Average Point (CAP): 4.5 out of 5.0
 		\item Expected time of graduation: May 2022
 		\item Awarded the Shirdi Sai Worship Centre Scholarship for Academic Years 2018/2019 and 2019/2020
-		\item Relevant coursework: Computer Networks, Programming Methodology, Discrete Mathematics, Calculus, Statistics for Life Sciences, Workplace Readiness, Professional and Academic Communication
+		\item Coursework: Computer Networks, Programming Methodology, Discrete Mathematics, Calculus, Statistics for Life Sciences, Workplace Readiness, Professional and Academic Communication
 	\end{itemize}
 	
 	\interspace
 	
-	\textbf{\large Technical Skills} \hrulefill
+	\textbf{\large TECHNICAL SKILLS} \hrulefill
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item \textbf{Computer Languages}: Python, Java, JavaScript, C++, SQL, Visual Basic, \LaTeX, Markdown, HTML5, CSS.
-		\item \textbf{Software}: Android Studio, IntelliJ IDEA, Visual Studio, XAMPP, Node.js, Postman, Microsoft Office suite, Adobe Photoshop, Illustrator, Premiere Pro, Audition, Lightroom, and After Effects, Image-Line FL Studio.
-		
+		\item \textbf{Languages}: Python, Java, JavaScript, JSX, C++, SQL, VB.NET, Shell, \LaTeX, Markdown, HTML5, CSS.
+		\item \textbf{Frameworks \& Software}: React, Android Studio, Node.js, XAMPP, Postman, Microsoft Office suite, Adobe Photoshop, XD, Illustrator, Premiere Pro, Audition, Lightroom, and After Effects, Image-Line FL Studio.
 	\end{itemize}
 
 	\interspace
 	
-	\textbf{\large Work Experience} \hrulefill \\
+	\textbf{\large PROJECTS} \hrulefill \\
+	\textbf{CheMakers Answers} (\href{http://bit.ly/chemakers}{bit.ly/chemakers} \textbar\space \href{http://github.com/purfectliterature/chemakers-ans}{github.com/purfectliterature/chemakers-ans})
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Developed a companion React app for a research organic chemistry board game for mobile devices to provide solutions to problems with QR code.
+	\end{itemize}
+
+	\intraspace
+
+	\textbf{Mercapto} and \textbf{Oganesson}
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Developed Mercapto, a Python-based automated plagiarism checking system for Programming Methodology module with \href{http://theory.stanford.edu/~aiken/moss/}{MOSS} and Selenium, improving the total processing time from 1 day to 1 hour (2,300\% faster).
+		\item Developing Oganesson, an extensible API builder to automate management  of courses hosted in \href{https://coursemology.org}{Coursemology}.
+	\end{itemize}
+
+	\intraspace
+	
+	\textbf{NUS Panopto Bookmarklet} (\href{http://github.com/purfectliterature/PanoptoBookmarklet}{github.com/purfectliterature/PanoptoBookmarklet})
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Developed a JavaScript-based browser bookmarklet to download NUS online web lecture hosted in \href{http://nuscast.ap.panopto.com}{Panopto}.
+	\end{itemize}
+	
+	\interspace
+	
+	\textbf{\large WORK EXPERIENCE} \hrulefill \\
 	\textbf{Smart Nation and Digital Government Office (SNDGO)} \hfill Singapore\\
-	\textit{Instructor --- Python Programming for the Public Service} \hfill Dec 2019 -- Present
+	\textit{Lead Instructor --- Python Programming for the Public Service} \hfill Dec 2019 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
 		\item Conduct training on Python programming and data analysis to officers from SNDGO and Ministry of Finance.
 		\item Organise teaching materials with emphasis on data processing, analysis, and object-oriented programming.
@@ -59,48 +90,45 @@ bottom=0.5in]{geometry}
 	\intraspace
 	
 	\textbf{School of Computing, National University of Singapore} \hfill Singapore\\
-	\textit{Teaching Assistant --- Programming Methodology} \hfill Aug 2019 -- Present
+	\textit{Head Teaching Assistant --- Programming Methodology} \hfill Aug 2019 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item \textbf{Oganesson}: Developed an extensible application programming interface (API) builder to automate management and data processing of courses hosted in \href{https://coursemology.org}{Coursemology} platform.
-		\item \textbf{Mercapto}: Developed a system and interlinked scripts to automate the detection, submission, and report-generation of submissions plagiarism-checking with \href{http://theory.stanford.edu/~aiken/moss/}{MOSS}, Python, Selenium, ChromeDriver, and Unix Shell scripts, thereby improving the total processing time from 1 day to 1 hour (2,300\% faster).
-		\item Currently appointed \textbf{Head Teaching Assistant} from Dec 2019 to delegate and coordinate the administrations of teaching assistants and students in the module.
+		\item Delegate and coordinate the administrations of teaching assistants and students in the module.
 		\item Conduct tutorial classes to undergraduates and plan teaching materials which align with learning objectives while incorporating solutions of various methodologies, achieving average teaching effectiveness of 4.1/5.0.
-		\item Grade continuous assignments and provide constructive feedback for students’ self-improvement, achieving the fastest average grading time of 1 hour and 16 minutes.
-		\item Arrange, invigilate, and grade assessments and examinations.
+		\item Grade continuous assignments and provide constructive feedback for students’ self-improvement, achieving the fastest average grading time of 1 hour and 16 minutes in AY2019/2020 Semester 1.
 	\end{itemize}
 	
 	\intraspace
 	
 	\textbf{SENSI Indonesia} \hfill Jakarta, Indonesia\\
-	\textit{Freelance --- \href{https://github.com/purfectliterature/GenericAntimony}{github.com/purfectliterature/GenericAntimony}} \hfill May 2019 -- Jul 2019
+	\textit{Freelance} (\href{https://github.com/purfectliterature/GenericAntimony}{github.com/purfectliterature/GenericAntimony}, cleaned source code) \hfill May 2019 -- Jul 2019
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
 		\item Developed a \href{https://github.com/purfectliterature/GenericAntimony}{frontend} Customer Records Management app for Android, and the \href{https://github.com/purfectliterature/GenericAntimonyBackend}{backend} RESTful API with Node.js in JavaScript and database management with MySQL.
-		\item Developed a user interface for Windows to allow database create, read, update, and delete (CRUD) management with Visual Basic .NET and MySQL.
+		\item Developed a Windows app for database create, read, update, and delete (CRUD) with VB.NET and MySQL.
 	\end{itemize}
 	
 	\interspace
 	
-	\textbf{\large Co-curricular Activities} \hrulefill \\
+	\textbf{\large CO-CURRICULAR ACTIVITIES} \hrulefill \\
 	\textbf{Ridge View Residential College Multimedia Team} \hfill Singapore\\
 	\textit{Official Photographer} \hfill Sep 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Assists documentation of college events for college’s social media outreach and publications.
-		\item Covered college events, such as Walk for Rice (with NTUC FairPrice) and NUS Open Day 2019.
+		\item Assists documentation of events (e.g. NTUC Walk for Rice, NUS Open Day 2019) for outreach and publications.
 	\end{itemize}
 	\intraspace
 	
 	\textbf{Jukebox, Music Interest Group of Ridge View Residential College} \hfill Singapore\\
-	\textit{Percussionist} \hfill Sep 2018 -- Present
+	\textit{Senior Member, Percussionist} \hfill Sep 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
 		\item Proactively performs with cajon, drums, or guitar in a band of five members.
-		\item Performed in the annual concert "Concert by the Ridge" on Apr 7, 2019 at the University Cultural Centre before over 300 people, including the College’s Master and Faculty Officers.
+		\item Performed in "Concert by the Ridge" on Apr 7, 2019 at University Cultural Centre attended by over 300 people.
 	\end{itemize}
 
 	\interspace
 	
-	\textbf{\large Additional Information} \hrulefill
+	\textbf{\large ADDITIONAL INFORMATION} \hrulefill
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
 		\item \textbf{Languages}: Fluent in Academic English, Fluent in Academic Bahasa Indonesia, and Hokkien.
 		\item Enjoys music production, established a Spotify for Artists account, and has published two tracks on iTunes.
+		\item Tools that I love: git, vim, bash, and zsh.
 	\end{itemize}
 \end{document}
