@@ -1,53 +1,83 @@
 \documentclass[a4paper, 11pt]{article}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
+
 \hypersetup{colorlinks=true, urlcolor=blue}
 \usepackage[
-top=0.6in,
+top=0.5in,
 left=0.6in,
 right=0.6in,
 bottom=0.6in]{geometry}
+\usepackage{CJKutf8}
+\usepackage{tabularx}
+\usepackage{multirow}
+%\AtBeginDvi{\input{zhwinfonts}}
 
 \setlength\parindent{0pt}
-\pagenumbering{gobble}
+%\pagenumbering{gobble}
 
 \newcommand{\interspace}{\vspace{10pt}}
 \newcommand{\intraspace}{\vspace{5pt}}
+\newcommand{\name}{Phillmont Muktar}
+\newcommand{\cname}{\begin{CJK*}{UTF8}{zhsong}郑传期\end{CJK*}}
+\newcommand{\tel}{+65 8651 6118}
+\newcommand{\email}{\href{mailto:phillmont@u.nus.edu}{phillmont@u.nus.edu}}
+\newcommand{\linkedin}{\href{http://linkedin.com/in/phillmont}{\textbf{linkedin}.com/in/phillmont}}
+\newcommand{\mysite}{\href{https://phillmontisaweso.me}{\textbf{www}.phillmontisaweso.me}}
 
 \begin{document}
 	\sffamily
-	\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-		\textbf{\Large Phillmont Muktar} & +65 8651 6118\\
-		 \href{mailto:phillmont@u.nus.edu}{phillmont@u.nus.edu}
-		 & \href{http://linkedin.com/in/phillmont}{http://linkedin.com/in/phillmont}
-	\end{tabular*}
+	\begin{tabularx}{\linewidth}{@{}X r@{}}
+		{\Large \textbf{\name, \cname}} & Homepage: \mysite\\ 
+		\email{} \textbar\textbar\space \tel & LinkedIn: \linkedin\\
+	\end{tabularx}
+	
+	\interspace
+	
+	\textbf{\large SUMMARY} \hrulefill \\
+ 	An enthusiastic, driven penultimate year Food Science and Technology undergraduate passionate about food chemistry, fermentation, and product development. Demonstrated great interpersonal skills, and also marked leadership through a selective appointment as head teaching assistant for a foundational programming course. Seeking an internship opportunity to apply and hone my team working, problem-solving, and analytical skills in a real-world fast-moving consumer goods industry.
 
 	\interspace
 
 	%\noindent\rule{\textwidth}{1pt}
-	\textbf{\large Education} \hrulefill \\
+	\textbf{\large EDUCATION} \hrulefill \\
 	\textbf{National University of Singapore} \hfill Singapore\\
-	\textit{B.Sc. Food Science and Technology major with a Minor in Computer Science} \hfill Aug 2018 -- Present
+	\textit{Bachelor of Science in Food Science and Technology, Minor in Computer Science} \hfill Aug 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Completed the first-year B.Sc. Chemistry curriculum: Fundamental Inorganic, Physical, and Organic Chemistry, Experiments in Chemistry, Calculus, and Fundamentals of Biochemistry. 
+		\item Completed the first-year B.Sc. Chemistry curriculum: First-level Inorganic, Physical, and Organic Chemistry, Experiments in Chemistry, Calculus, and Fundamentals of Biochemistry. 
 		\item Expected time of graduation: May 2022
-		\item Cumulative Average Point (CAP): 4.5/5.0
-		\item Awarded the Shirdi Sai Worship Centre Scholarship for Academic Years 2018/2019 and 2019/2020
-		\item Relevant coursework: Chemistry of Food Components, Statistics for Life Sciences, Professional and Academic Communication, Programming Methodology, and Quantitative Reasoning. 
+		\item Cumulative Average Point (CAP): 4.49 out of 5.00
+		\item Awarded the Shirdi Sai Worship Centre Scholarship for Academic Years 2018/2019, 2019/2020, and 2020/2021
+		\item Relevant coursework: Food Microbiology \& Fermentation, Sensory \& Flavour Science, Advanced Food Engineering, Chemistry of Food Components, Postharvest Food Processing, Statistics for Life Sciences. 
 	\end{itemize}
 	
 	\interspace
 	
-	\textbf{\large Work Experience} \hrulefill \\
-	\textbf{School of Computing, National University of Singapore} \hfill Singapore\\
-	\textit{Teaching Assistant} \hfill Aug 2019 -- Present
+	\textbf{\large WORK EXPERIENCE} \hrulefill \\
+	\textbf{Abbott Manufacturing (Singapore) Pte Ltd} \hfill Singapore\\
+	\textit{Product Research Intern (Technical Centre)} \hfill Dec 2020 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Conduct tutorial classes to undergraduates and plan teaching materials which align with the learning objectives while incorporating solutions of various methodologies, achieving average teaching effectiveness of 4.1/5.0.
-		\item Grade continuous assignments and provide constructive feedback for students’ self-improvement, achieving the fastest average grading time of 1 hour and 16 minutes.
-		\item Arrange, invigilate, and grade assessments and examinations in the module.
-		\item Manage and moderate discussion forums and the award of participation marks, as well as attending to students’ queries in the discussion forums.
-		\item Improved the mechanisms to flag plagiarisms in the module by automating \href{http://theory.stanford.edu/~aiken/moss/}{MOSS} submissions.
-		\item Appointed the \textbf{Head Teaching Assistant} on Dec 2019 to coordinate teaching administrations of the module.
+		\item Provided intensive support for the milk powder production plant's daily operations and technical justifications for complaints or manufacturing issues.
+		\item Involved in various product improvement or troubleshooting projects, such as oligofructose storage study, grain overprecipitation, and commodity exchange.
+	\end{itemize}
+
+	\intraspace
+	
+	\textbf{Smart Nation and Digital Government Office (SNDGO)} \hfill Singapore\\
+	\textit{Lead Instructor --- Python Programming for the Public Service} \hfill Dec 2019 -- Nov 2020 
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Conducted trainings on Python programming and data analysis to SNDGO and Ministry of Finance officers.
+		\item Organised teaching materials with emphasis on data processing, analysis, and object-oriented programming.
+	\end{itemize}
+
+	\intraspace
+	
+	\textbf{School of Computing, National University of Singapore} \hfill Singapore\\
+	\textit{Senior Teaching Assistant --- Programming Methodology I and II} \hfill Aug 2019 -- Present
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item \textbf{Appointed Head in Dec 2019 -- Jul 2020} to administratively coordinate the TAs and students in the module.
+		\item Conduct tutorial classes to undergraduates, achieving an average teaching effectiveness of 4.1/5.0.
+		\item Continuously contributing by developing new teaching assistants' training curriculum, integrated assignments plagiarism checking system, administrative tasks automation, and course materials improvements.
 	\end{itemize}
 	
 	\intraspace
@@ -61,38 +91,82 @@ bottom=0.6in]{geometry}
 	
 	\interspace
 	
-	\textbf{\large Co-curricular Activities} \hrulefill \\
+	\textbf{\large CO-CURRICULAR ACTIVITIES} \hrulefill \\
 	\textbf{Ridge View Residential College Multimedia Team} \hfill Singapore\\
 	\textit{Official Photographer} \hfill Sep 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Assists documentation of college events for college’s social media outreach and publications.
+		\item Assisted documentation of college events for college’s social media outreach and publications.
 		\item Covered college events, such as Walk for Rice (with NTUC FairPrice) and NUS Open Day 2019.
 	\end{itemize}
 	\intraspace
 	
 	\textbf{Jukebox, Music Interest Group of Ridge View Residential College} \hfill Singapore\\
-	\textit{Percussionist} \hfill Sep 2018 -- Present
+	\textit{Senior Member, Percussionist} \hfill Sep 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Actively performs with the cajon, drums, and guitar in a band of five members.
+		\item Actively perform with the cajon, drums, and guitar in a band of five members.
 		\item Performed in the annual concert "Concert by the Ridge" on Apr 7, 2019 at the University Cultural Centre before over 300 people, including the College’s Master and Faculty Officers.
 	\end{itemize}
 
 	\interspace
-	
-	\textbf{\large Skills} \hrulefill
+
+	\textbf{\large PROJECTS} \hrulefill \\
+	\textbf{NiamKhun: A Laos Khao Soi instant noodle}
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item \textbf{Critical thinking}: Able to employ reasoning and logic to evaluate solutions and approaches to problems.
-		\item \textbf{Team player}: Able to collaborate and engage with people of diverse disciplines and personalities, and accomplish tasks and goals consistently with excellence performance.
-		\item \textbf{Communication}: Able to engage in discussions, applying empathetic qualities while communicating effectively.
-		\item \textbf{Applications}: Word, Excel, PowerPoint, ChemDraw, Mendeley, EndNote, Maple, SPSS, Adobe Photoshop, Illustrator, Premiere Pro, Audition, Lightroom, and After Effects, Image-Line FL Studio.
-		\item \textbf{Languages}: Fluent in Academic English, Fluent in Academic Bahasa Indonesia, and Hokkien.
-		\item \textbf{Computer Languages}: Python, JavaScript, Java, C++, Visual Basic, \LaTeX, HTML5, CSS.
+		\item As the project leader, led team discussions on product research and formulation, delegated with the partner company (Mekong Group Pte Ltd), pitched the project as a viable, innovative product and was successful in winning third prize in the NUS FST New Product Development Competition 2020.
+		\item As a member of the formulation team, collaboratively formulated and developed NiamKhun, an instant noodle inspired by the authentic Laos Khao Soi, a tomato-based soup noodle infused with soybean paste.
+	\end{itemize}
+
+	\intraspace
+	
+	\textbf{Project Strawy: Investigating edible straws to reduce plastics waste} (\href{https://drive.google.com/file/d/15xKE6J7IFcU33w_PgHe4C2bpB9JK7ku8/view?usp=sharing}{Poster})
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Developed prototypes of edible straws from unbleached all-purpose flour, which was able to withstand 40 minutes of immersion in water and poke through cup seals.
+		\item Expedited team discussions, especially as an evaluator, and challenged team ideas to strengthen them.
+		\item Designed pitch presentation materials and poster; featured in RVRC Action for Sustainability Symposium 2019.
+	\end{itemize}
+
+	\intraspace
+	
+	\textbf{CheMakers: A collaborative board game to teach organic chemistry} (\href{https://pubs.acs.org/doi/abs/10.1021/acs.jchemed.0c01116}{doi:10.1021/acs.jchemed.0c01116})
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Developed the board game mechanics, both pedagogically and digitally, conforming to the Bloom's taxonomy to support teaching organic chemistry to first-year Chemistry undergraduates.
+		\item Developed a companion React app for a research organic chemistry board game for mobile devices to provide solutions to problems with QR code.
+		\item CheMakers was pilot tested with 103 students of CM1121 Organic Chemistry 1 at NUS, and submitted to the ACS Journal of Chemical Education in Dec 2020.
+	\end{itemize}
+	
+	\intraspace
+	
+	\textbf{BloodConnect} (\href{https://bloodwork-nus.github.io/bloodconnect/}{bloodwork-nus.github.io/bloodconnect} \textbar\space \href{https://github.com/bloodwork-nus/bloodconnect}{github.com/bloodwork-nus/bloodconnect})
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Independently developed a platform for connecting blood seekers and donors with Android/iOS apps powered by React Native and serverless back-end powered by Firebase. An \href{https://orbital.comp.nus.edu.sg/}{NUS Orbital 2020} Artemis level project.
+	\end{itemize}
+	
+	\intraspace
+	
+	\textbf{KeepTrack} (\href{https://purfectliterature.github.io/keeptrack/}{purfectliterature.github.io/keeptrack} \textbar\space \href{https://github.com/purfectliterature/keeptrack}{github.com/purfectliterature/keeptrack})
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Developed a React Native app for Android and iOS to scan and save SafeEntry QR codes, allowing users to check-in and check-out of SafeEntry from the KeepTrack without repeatedly scanning the QR codes.
 	\end{itemize}
 
 	\interspace
 	
-	\textbf{\large Additional Information} \hrulefill
+	\textbf{\large SKILLS} \hrulefill
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Enjoys music production, established a Spotify for Artists account, and has published two tracks on iTunes.
+		\item \textbf{Applications}: Word, Excel, PowerPoint, ChemDraw, Compusense, Qualtrics, Mendeley, EndNote, Maple, SPSS, Adobe Photoshop, Illustrator, Premiere Pro, Audition, Lightroom, and After Effects.
+		\item \textbf{Languages}: Fluent in Academic English, Fluent in Academic Bahasa Indonesia, and Hokkien.
+		\item \textbf{Computer Languages}: Python, JavaScript, Java, C++, Visual Basic, \LaTeX, SQL, HTML5, CSS3, Dart.
+		
+		\intraspace
+		
+		\item \textbf{Critical thinking}: Able to employ reasoning and logic to evaluate solutions and approaches to problems.
+		\item \textbf{Team player}: Able to collaborate and engage with people of diverse disciplines and personalities, and accomplish tasks and goals consistently with excellent performance.
+		\item \textbf{Communication}: Able to engage in discussions, applying empathetic qualities while communicating effectively.
+	\end{itemize}
+
+	\interspace
+	
+	\textbf{\large ADDITIONAL INFORMATION} \hrulefill
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Enjoys electronic music production, established a Spotify for Artists account, and has published two tracks on iTunes.
 	\end{itemize}
 \end{document}
