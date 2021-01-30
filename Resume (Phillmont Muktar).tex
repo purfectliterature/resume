@@ -3,25 +3,26 @@
 \documentclass[a4paper, 11pt]{article}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
+\usepackage{fontawesome}
 \hypersetup{colorlinks=true, urlcolor=blue}
 \usepackage[
 top=0.5in,
-left=0.5in,
-right=0.5in,
-bottom=0.5in]{geometry}
+left=0.6in,
+right=0.6in,
+bottom=0.6in]{geometry}
 \usepackage{CJKutf8}
 \usepackage{tabularx}
 \usepackage{multirow}
-\AtBeginDvi{\input{zhwinfonts}}
+%\AtBeginDvi{\input{zhwinfonts}}
 
 \setlength\parindent{0pt}
-\pagenumbering{gobble}
+%\pagenumbering{gobble}
 
-\newcommand{\interspace}{\vspace{7pt}}
-\newcommand{\intraspace}{\vspace{2pt}}
+\newcommand{\interspace}{\vspace{10pt}}
+\newcommand{\intraspace}{\vspace{5pt}}
 \newcommand{\name}{Phillmont Muktar}
 \newcommand{\cname}{\begin{CJK*}{UTF8}{zhsong}郑传期\end{CJK*}}
-\newcommand{\tel}{+65 8651 6118}
+\newcommand{\tel}{\href{tel:86516118}{+65 8651 6118}}
 \newcommand{\email}{\href{mailto:phillmont@u.nus.edu}{phillmont@u.nus.edu}}
 \newcommand{\linkedin}{\href{http://linkedin.com/in/phillmont}{\textbf{linkedin}.com/in/phillmont}}
 \newcommand{\github}{\href{http://github.com/purfectliterature}{\textbf{github}.com/purfectliterature}}
@@ -30,19 +31,24 @@ bottom=0.5in]{geometry}
 \begin{document}
 	\sffamily
 	
-	\begin{tabularx}{\linewidth}{@{}X r@{}}
-		{\Large \textbf{\name, \cname}} & \mysite\\ 
-		\email & \github\\
-		\tel & \linkedin
+	\begin{tabularx}{\linewidth}{@{}X l@{}}
+		{\Large \textbf{\name, \cname}} & \faLink \space\space \mysite\\ 
+		\faEnvelope \space\space \email & \faGithub \space\space \github\\
+		\faPhone \space\space \tel & \faLinkedin \space\space \linkedin
 	\end{tabularx}
 
+	\interspace
+	
+	\textbf{\large SUMMARY} \hrulefill \\
+	An enthusiastic, driven penultimate year Food Science undergraduate educated in Computer Science, strongly passionate about full-stack software engineering. Demonstrated great interpersonal skills, and also marked leadership through a selective appointment as head teaching assistant for a foundational programming course. Seeking an internship opportunity to apply and hone my teamworking, problem-solving, and analytical skills in a real-world software engineering company.
+	
 	\interspace
 
 	\textbf{\large EDUCATION} \hrulefill \\
 	\textbf{National University of Singapore} \hfill Singapore\\
-	\textit{Bachelor of Science in Food Science and Technology, Minor in Computer Science} \hfill Aug 2018 -- Present
+	\textit{Bachelor of Science in Food Science and Technology, Minor in \textbf{Computer Science}} \hfill Aug 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Cumulative Average Point (CAP): 4.5 out of 5.0
+		\item Cumulative Average Point (CAP): 4.49 out of 5.00
 		\item Expected time of graduation: May 2022
 		\item Awarded the Shirdi Sai Worship Centre Scholarship for Academic Years 2018/19, 2019/20, and 2020/21
 		\item Coursework: Software Product Engineering for Digital Markets, Programming Methodology, Data Structures \& Algorithms, Computer Networks, Discrete Maths, Calculus, Professional and Academic Communication
@@ -52,50 +58,80 @@ bottom=0.5in]{geometry}
 	
 	\textbf{\large TECHNICAL SKILLS} \hrulefill
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item \textbf{Languages}: Python, Java, JavaScript, JSX, C++, SQL, VB.NET, Shell, \LaTeX, Markdown, HTML5, CSS.
-		\item \textbf{Frameworks \& Software}: React, React Native, Redux, Android Studio, Node.js, Microsoft Office suite, Adobe Photoshop, XD, Illustrator, Premiere Pro, Audition, Lightroom, and After Effects, Image-Line FL Studio.
+		\item \textbf{Languages}: Python, Java, JavaScript, Dart, C++, SQL, VB.NET, Shell, \LaTeX, Markdown, HTML5, CSS3.
+		\item \textbf{Frameworks \& Software}: React, React Native, Redux, Vue, Flutter, Android Studio, Node.js, Tailwind CSS, Firebase, Tensorflow.js, Microsoft Office suite, Figma, Adobe Photoshop, XD, Illustrator, Premiere Pro, Audition, Lightroom, and After Effects, Image-Line FL Studio.
 	\end{itemize}
 
 	\interspace
 	
 	\textbf{\large PROJECTS} \hrulefill \\
+	\textbf{FaceOff: A multiplayer facial expressions party pack mobile game} (\href{https://faceoff.fun/}{faceoff.fun})
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item FaceOff is a party pack of 3 multiplayer games, designed for 3-4 players, which uses players' facial expressions.
+		\item Designed the entire game's user interface, UX prototypes, and design system, and co-developed the front-end.
+		\item Closely collaborated in the project's ideation and prototypes' development, as well as experimenting with TensorFlow.js and PoseNet, Handpose, and Facemesh models as possible back-ends for the game.
+		\item FaceOff was showcased in \href{https://isteps.comp.nus.edu.sg/event/17th-steps/result}{The 17th NUS School of Computing Term Project Showcase (STePS)}, was awarded the \textbf{Best Project Award (First Prize)} in Nov 2020, and will be featured in SoC's Open Day 2021.
+	\end{itemize}
+	
+	\intraspace
+	
+	\textbf{Findaloo: Search toilets around you} (\href{https://findaloo.netlify.app/}{findaloo.netlify.app} \textbar\space \href{https://github.com/purfectliterature/findaloo}{github.com/purfectliterature/findaloo})
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Findaloo is a mobile-first progressive webapp to find nearest toilets around the user, with details on genders, amenities, and user reviews, powered by React front-end, and Express.js, PostgreSQL, and AWS EC2 back-end.
+		\item Led the entire design system, UI/UX prototypes, and front-end developments, and developed the UI components, main interfaces, back-end integrations, and progressive webapp implementation and optimisations.
+	\end{itemize}
+	
+	\intraspace
+	
 	\textbf{BloodConnect} (\href{https://bloodwork-nus.github.io/bloodconnect/}{bloodwork-nus.github.io/bloodconnect} \textbar\space \href{https://github.com/bloodwork-nus/bloodconnect}{github.com/bloodwork-nus/bloodconnect})
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Solely developing a platform for connecting blood seekers and donors, with Android and iOS mobile apps powered by React Native and serverless back-end powered by Firebase. This is an NUS Orbital 2020 Artemis level project.
+		\item BloodConnect is a platform which connects blood seekers and donors through a mobile application.
+		\item Solely designed and developed the entire stack of the application for Android and iOS with React Native front-end and Firebase serverless back-end. An \href{https://orbital.comp.nus.edu.sg/}{NUS Orbital 2020} highest-level (Artemis level) project.
 	\end{itemize}
 	
 	\intraspace
 	
 	\textbf{KeepTrack} (\href{https://purfectliterature.github.io/keeptrack/}{purfectliterature.github.io/keeptrack} \textbar\space \href{https://github.com/purfectliterature/keeptrack}{github.com/purfectliterature/keeptrack})
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Developed a React Native app for Android and iOS to scan and save SafeEntry QR codes, allowing users to check-in and check-out of SafeEntry from the KeepTrack without repeatedly scanning the QR codes.
+		\item Solely developed a React Native app for Android and iOS to scan and save SafeEntry QR codes, allowing users to check-in and check-out of SafeEntry from the KeepTrack without repeatedly scanning the QR codes.
 	\end{itemize}
 
 	\intraspace
 	
-	\textbf{CheMakers Answers} (\href{http://bit.ly/chemakers}{bit.ly/chemakers} \textbar\space \href{http://github.com/purfectliterature/chemakers-ans}{github.com/purfectliterature/chemakers-ans})
+	\textbf{CheMakers: A collaborative board game to teach organic chemistry} (\href{https://pubs.acs.org/doi/abs/10.1021/acs.jchemed.0c01116}{doi:10.1021/acs.jchemed.0c01116})
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Developed a companion React app for a research organic chemistry board game for mobile devices to provide solutions to problems with QR code.
+		\item Developed the board game mechanics, both pedagogically and digitally, conforming to the Bloom's taxonomy to support teaching organic chemistry to first-year Chemistry undergraduates.
+		\item CheMakers was pilot tested with 103 students of CM1121 Organic Chemistry 1 at NUS, and submitted to the ACS Journal of Chemical Education in Dec 2020.
+		\item Developed a companion React app for a research organic chemistry board game for mobile devices to provide solutions to problems with QR code. (\href{http://bit.ly/chemakers}{bit.ly/chemakers} \textbar\space \href{http://github.com/purfectliterature/chemakers-ans}{github.com/purfectliterature/chemakers-ans})
 	\end{itemize}
 	
-	\interspace
+	\pagebreak
 	
 	\textbf{\large WORK EXPERIENCE} \hrulefill \\
-	\textbf{Smart Nation and Digital Government Office (SNDGO)} \hfill Singapore\\
-	\textit{Lead Instructor --- Python Programming for the Public Service} \hfill Dec 2019 -- Present
+	\textbf{Abbott Manufacturing (Singapore) Pte Ltd} \hfill Singapore\\
+	\textit{Product Research Intern (Technical Centre)} \hfill Dec 2020 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Conduct training on Python programming and data analysis to officers from SNDGO and Ministry of Defence.
-		\item Organise teaching materials with emphasis on data processing, analysis, and object-oriented programming.
+		\item Provided intensive support for the milk powder production plant's daily operations and technical justifications for complaints or manufacturing issues.
+		\item Involved in various product improvement or troubleshooting projects, such as oligofructose storage study, grain overprecipitation, and commodity exchange.
 	\end{itemize}
-
+	
+	\intraspace
+	
+	\textbf{Smart Nation and Digital Government Office (SNDGO)} \hfill Singapore\\
+	\textit{Lead Instructor --- Python Programming for the Public Service} \hfill Dec 2019 -- Nov 2020 
+	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+		\item Conducted trainings on Python programming and data analysis to SNDGO and Ministry of Finance officers.
+		\item Organised teaching materials with emphasis on data processing, analysis, and object-oriented programming.
+	\end{itemize}
+	
 	\intraspace
 	
 	\textbf{School of Computing, National University of Singapore} \hfill Singapore\\
-	\textit{Senior Teaching Assistant --- Programming Methodology} \hfill Aug 2019 -- Present
+	\textit{Senior Teaching Assistant --- Programming Methodology I and II} \hfill Aug 2019 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item \textbf{Appointed Head in Dec 2019 -- Jul 2020} to coordinate the administrations of TAs and students in the module.
-		\item Conduct tutorial classes to undergraduates and plan teaching materials which align with learning objectives while incorporating solutions of various methodologies, achieving average teaching effectiveness of 4.1/5.0.
-		\item Grade continuous assignments and provide constructive feedback for students’ self-improvement, achieving the fastest average grading time of 1 hour and 16 minutes in AY2019/2020 Semester 1.
+		\item \textbf{Appointed Head in Dec 2019 -- Jul 2020} to administratively coordinate the TAs and students in the module.
+		\item Conduct tutorial classes to undergraduates, achieving an average teaching effectiveness of 4.1/5.0.
+		\item Continuously contributing by developing new teaching assistants' training curriculum, integrated assignments plagiarism checking system, administrative tasks automation, and course materials improvements.
 	\end{itemize}
 	
 	\intraspace
@@ -110,18 +146,20 @@ bottom=0.5in]{geometry}
 	\interspace
 	
 	\textbf{\large CO-CURRICULAR ACTIVITIES} \hrulefill \\
-	\textbf{Ridge View Residential College Multimedia Team} \hfill Singapore\\
-	\textit{Official Photographer} \hfill Sep 2018 -- Present
+	\textbf{Ridge View Residential College} \hfill Singapore\\
+	\textit{Official Photographer, Website Design Head} \hfill Sep 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Assists documentation of events (e.g. NTUC Walk for Rice, NUS Open Day 2019) for outreach and publications.
+		\item Assisted documentation of college events for college’s social media outreach and publications.
+		\item Covered college events, such as Walk for Rice (with NTUC FairPrice) and NUS Open Day 2019.
+		\item As the website design head, leading the entire design and development lifecycle of the College's open day showcase website for prospective students.
 	\end{itemize}
 	\intraspace
 	
 	\textbf{Jukebox, Music Interest Group of Ridge View Residential College} \hfill Singapore\\
 	\textit{Senior Member, Percussionist} \hfill Sep 2018 -- Present
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-		\item Proactively performs with cajon, drums, or guitar in a band of five members.
-		\item Performed in "Concert by the Ridge" on Apr 7, 2019 at University Cultural Centre attended by over 300 people.
+		\item Actively perform with the cajon, drums, and guitar in a band of five members.
+		\item Performed in the annual concert "Concert by the Ridge" on Apr 7, 2019 at the University Cultural Centre before over 300 people, including the College’s Master and Faculty Officers.
 	\end{itemize}
 
 	\interspace
@@ -129,6 +167,6 @@ bottom=0.5in]{geometry}
 	\textbf{\large ADDITIONAL INFORMATION} \hrulefill
 	\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
 		\item \textbf{Languages}: Fluent in Academic English, Fluent in Academic Bahasa Indonesia, and Hokkien.
-		\item Enjoys music production, established a Spotify for Artists account, and has published two tracks on iTunes.
+		\item Enjoys electronic music production, established a Spotify for Artists account, and has published two tracks on iTunes.
 	\end{itemize}
 \end{document}
